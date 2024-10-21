@@ -2,6 +2,7 @@ import { Route, Router } from "@vaadin/router";
 import { css, html, LitElement, PropertyValues } from "lit";
 import { customElement } from "lit/decorators.js";
 import "./comet/demo-accordion";
+import "./comet/demo-badge";
 import "./comet/demo-card";
 import "./comet/demo-comet-button";
 import "./comet/demo-comet-default-button";
@@ -23,6 +24,7 @@ export class DemoMain extends LitElement {
           component: "demo-home",
         },
         { path: "/accordion", component: "demo-accordion" },
+        { path: "/badge", component: "demo-badge" },
         { path: "/button", component: "demo-button" },
         { path: "/card", component: "demo-card" },
         { path: "/comet-button", component: "demo-comet-button" },
@@ -42,6 +44,7 @@ export class DemoMain extends LitElement {
         <vaadin-tabs>
           <vaadin-tab><a href="/">Home</a></vaadin-tab>
           <vaadin-tab><a href="/accordion">Accordion</a></vaadin-tab>
+          <vaadin-tab><a href="/badge">Badge</a></vaadin-tab>
           <vaadin-tab><a href="/button">Button</a></vaadin-tab>
           <vaadin-tab><a href="/card">Card</a></vaadin-tab>
           <vaadin-tab><a href="/comet-button">Comet Button</a></vaadin-tab>
