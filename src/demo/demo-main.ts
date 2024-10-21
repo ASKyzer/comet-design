@@ -8,6 +8,7 @@ import "./comet/demo-card";
 import "./comet/demo-color-picker";
 import "./comet/demo-comet-button";
 import "./comet/demo-comet-default-button";
+import "./comet/demo-features-banner";
 import "./comet/demo-icon";
 import "./comet/demo-small-card";
 import "./comet/demo-toggle";
@@ -36,6 +37,7 @@ export class DemoMain extends LitElement {
           path: "/comet-default-button",
           component: "demo-comet-default-button",
         },
+        { path: "/features-banner", component: "demo-features-banner" },
         { path: "/icon", component: "demo-icon" },
         { path: "/small-card", component: "demo-small-card" },
         { path: "/toggle", component: "demo-toggle" },
@@ -58,6 +60,9 @@ export class DemoMain extends LitElement {
             ><a href="/comet-default-button"
               >Comet Default Button</a
             ></vaadin-tab
+          >
+          <vaadin-tab
+            ><a href="/features-banner">Features Banner</a></vaadin-tab
           >
           <vaadin-tab><a href="/icon">Icon</a></vaadin-tab>
           <vaadin-tab><a href="/small-card">Small Card</a></vaadin-tab>
