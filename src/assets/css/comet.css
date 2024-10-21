@@ -1,0 +1,18 @@
+:root {
+  /* Colors */
+  --comet-color-border: var(--neutral-60);
+  --comet-color-border-light: var(--neutral-20);
+  --comet-color-disabled: var(--neutral-50);
+  --comet-color-disabled-label: var(--neutral-60);
+  --comet-color-disabled-bg: var(--neutral-20);
+  --comet-color-font-dark: var(--primary-80);
+  --comet-color-font-light: var(--primary-60);
+  --comet-color-hover: var(--neutral-10);
+  --comet-color-invalid: var(--danger-60);
+  --comet-color-invalid-bg: var(--neutral-0);
+  --comet-color-invalid-hover: var(--danger-10);
+  --comet-color-placeholder: var(--neutral-60);
+  --comet-color-selected: var(--primary-20);
+  --comet-color-selected-dark: var(--primary-50);
+  --comet-color-selected-light: var(--primary-10);
+}

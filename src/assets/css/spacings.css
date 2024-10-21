@@ -1,0 +1,19 @@
+:root {
+  --spacing-scale-small: 0.25rem;
+  --spacing-scale-big: calc(var(--spacing-scale-small) * 2);
+
+  --spacing-xxs: calc(var(--spacing-scale-small));
+  --spacing-xs: calc(var(--spacing-xxs) + var(--spacing-scale-small));
+  --spacing-s: calc(var(--spacing-xs) + var(--spacing-scale-small));
+  --spacing-md: calc(var(--spacing-s) + var(--spacing-scale-small));
+  --spacing-l: calc(var(--spacing-md) + var(--spacing-scale-small));
+  --spacing-xl: calc(var(--spacing-md) + var(--spacing-scale-big));
+  --spacing-xxl: calc(var(--spacing-xl) + var(--spacing-scale-big));
+  --spacing-xxxl: calc(var(--spacing-xxl) + var(--spacing-scale-small));
+  --spacing-jumbo: calc(var(--spacing-xxxl) + var(--spacing-scale-small));
+  --spacing-xjumbo: calc(var(--spacing-jumbo) + var(--spacing-scale-big));
+  --spacing-xxjumbo: calc(var(--spacing-xjumbo) + var(--spacing-scale-big));
+  --spacing-xxxjumbo: calc(var(--spacing-xxjumbo) + var(--spacing-scale-big));
+  --spacing-mega: calc(var(--spacing-xxjumbo) * 2);
+  --spacing-giga: calc(var(--spacing-xxxjumbo) + var(--spacing-scale-big));
+}

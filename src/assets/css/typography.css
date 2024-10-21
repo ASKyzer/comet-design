@@ -1,0 +1,80 @@
+:root {
+  --typo-font-family-kyn: "Kyn", -apple-system, blinkmacsystemfont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial,
+    sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  --typo-font-family-playfair-display: "Playfair Display", serif;
+
+  --typo-font-weights-regular: 400;
+  --typo-font-weights-semibold: 600;
+  --typo-font-weights-bold: 700;
+
+  /* Display Large */
+  --typo-display-large-size-mobile: 2.5rem;
+  --typo-display-large-size-tablet: 2.5rem;
+  --typo-display-large-size-desktop: 4.5rem;
+
+  --typo-display-large-line-height-mobile: 2.5rem;
+  --typo-display-large-line-height-tablet: 2.5rem;
+  --typo-display-large-line-height-desktop: 4.5rem;
+
+  /* Display Medium */
+  --typo-display-medium-size-mobile: 2.5rem;
+  --typo-display-medium-size-tablet: 2.5rem;
+  --typo-display-medium-size-desktop: 3.25rem;
+
+  --typo-display-medium-line-height-mobile: 2rem;
+  --typo-display-medium-line-height-tablet: 2rem;
+  --typo-display-medium-line-height-desktop: 3.125rem;
+
+  /* Display Small */
+  --typo-display-small-size-mobile: 1.5rem;
+  --typo-display-small-size-tablet: 1.5rem;
+  --typo-display-small-size-desktop: 3rem;
+
+  --typo-display-small-line-height-mobile: 2rem;
+  --typo-display-small-line-height-tablet: 2rem;
+  --typo-display-small-line-height-desktop: 2.75rem;
+
+  /* Heading Large */
+  --typo-heading-large-size-mobile: 1.5rem;
+  --typo-heading-large-size-tablet: 1.5rem;
+  --typo-heading-large-size-desktop: 2rem;
+
+  --typo-heading-large-line-height-mobile: 2rem;
+  --typo-heading-large-line-height-tablet: 2rem;
+  --typo-heading-large-line-height-desktop: 2.5rem;
+
+  /* Heading Medium */
+  --typo-heading-medium-size: 1.375rem;
+
+  --typo-heading-medium-line-height: 1.75rem;
+
+  /* Heading Small */
+  --typo-heading-small-size: 1.188rem;
+
+  --typo-heading-small-line-height: 1.5rem;
+
+  /* Body */
+  --typo-body-size: 1rem;
+
+  --typo-body-line-height: 1.5rem;
+
+  /* Body Large */
+  --typo-body-large-size-mobile: 1.125rem;
+  --typo-body-large-size-tablet: 1.125rem;
+  --typo-body-large-size-desktop: 1.25rem;
+
+  --typo-body-large-line-height-mobile: 1.75rem;
+  --typo-body-large-line-height-tablet: 1.75rem;
+  --typo-body-large-line-height-desktop: 2rem;
+
+  /* Body Small */
+  --typo-body-small-size: 0.875rem;
+
+  --typo-body-small-line-height: 1.5rem;
+
+  /* Caption */
+  --typo-caption-size: 0.75rem;
+
+  --typo-caption-line-height: 1rem;
+}

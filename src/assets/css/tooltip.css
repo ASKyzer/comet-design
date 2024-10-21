@@ -1,0 +1,16 @@
+:root {
+  --vaadin-tooltip-offset-top: 5px;
+  --vaadin-tooltip-offset-bottom: 5px;
+  --vaadin-tooltip-offset-start: 12px;
+  --vaadin-tooltip-offset-end: 12px;
+}
+
+vaadin-tooltip-overlay.theme-light::part(overlay) {
+  background-color: var(--neutral-100);
+  color: var(--neutral-0);
+}
+
+vaadin-tooltip-overlay.theme-dark::part(overlay) {
+  background-color: var(--neutral-0);
+  color: var(--neutral-100);
+}

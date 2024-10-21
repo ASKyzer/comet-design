@@ -1,0 +1,90 @@
+:root {
+  --neutral-0: #fff;
+  --neutral-10: #f7f6f4;
+  --neutral-20: #f1f0ee;
+  --neutral-30: #ebeae8;
+  --neutral-40: #e0dfdc;
+  --neutral-50: #c7c6c5;
+  --neutral-60: #a5a4a1;
+  --neutral-70: #575655;
+  --neutral-80: #3d3d3d;
+  --neutral-90: #303030;
+  --neutral-100: #242424;
+  /* Primary */
+  --primary-10: #faf7ff;
+  --primary-20: #cec0e0;
+  --primary-30: #b194ca;
+  --primary-40: #9d71dc;
+  --primary-50: #501e96;
+  --primary-60: #3d127a;
+  --primary-70: #340970;
+  --primary-80: #301254;
+  --primary-90: #21024c;
+  --primary-100: #18092a;
+  /* Secondary */
+  --secondary-10: #ebfaf8;
+  --secondary-20: #d9f7f3;
+  --secondary-30: #bde8f1;
+  --secondary-40: #a0e1dc;
+  --secondary-50: #28d7dc;
+  --secondary-60: #0fc3c8;
+  --secondary-70: #01b4bb;
+  --secondary-80: #01abb2;
+  --secondary-90: #008c96;
+  --secondary-100: #003033;
+  /* Tertiary */
+  --tertiary-10: #fff8ed;
+  --tertiary-20: #fff1dd;
+  --tertiary-30: #f3e2b3;
+  --tertiary-40: #f7d51e;
+  --tertiary-50: #fbc326;
+  --tertiary-60: #fba626;
+  --tertiary-70: #fb8c26;
+  --tertiary-80: #e77710;
+  --tertiary-90: #ab5608;
+  --tertiary-100: #301903;
+  /* Success */
+  --success-10: #def7e8;
+  --success-20: #c6f1d7;
+  --success-30: #b0f2cb;
+  --success-40: #24c665;
+  --success-50: #1daf57;
+  --success-60: #148541;
+  --success-70: #077734;
+  --success-80: #0f5c2e;
+  --success-90: #0b4a24;
+  --success-100: #083419;
+  /* Info */
+  --info-10: #e9f4fd;
+  --info-20: #d0e8fb;
+  --info-30: #5a9eed;
+  --info-40: #197bec;
+  --info-50: #116cd6;
+  --info-60: #0c53a7;
+  --info-70: #054085;
+  --info-80: #063974;
+  --info-90: #023067;
+  --info-100: #011e41;
+  /* Warning */
+  --warning-10: #fef6e4;
+  --warning-20: #feecc3;
+  --warning-30: #fee4a7;
+  --warning-40: #f1aa51;
+  --warning-50: #ed9424;
+  --warning-60: #d0790b;
+  --warning-70: #935608;
+  --warning-80: #6a471b;
+  --warning-90: #4c3211;
+  --warning-100: #241809;
+  /* Danger */
+  --danger-10: #fff0ee;
+  --danger-20: #fededc;
+  --danger-30: #feb9b4;
+  --danger-40: #ea564e;
+  --danger-50: #ea3e35;
+  --danger-60: #c0241b;
+  --danger-70: #9e1710;
+  --danger-80: #7d201c;
+  --danger-90: #621613;
+  --danger-100: #3b0907;
+}

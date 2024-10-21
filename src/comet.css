@@ -1,0 +1,40 @@
+/*
+  HERE OUR CSS VARIABLES SETUP
+ */
+
+@import "assets/css/index.css";
+
+@font-face {
+  font-family: "kyn";
+  src: url("assets/fonts/kyn/Kyn-Regular.woff2");
+}
+
+@font-face {
+  font-family: "kyn-bold";
+  src: url("assets/fonts/kyn/Kyn-Bold.woff2");
+}
+
+:root {
+  --lumo-font-family: "kyn", sans-serif;
+  --lumo-primary-text-color: #301254;
+  --info-background-color: #d0e8fb;
+  --success-background-color: #c6f1d7;
+  --warning-background-color: #feecc3;
+  --danger-background-color: #fededc;
+  --info-font-color: #063974;
+  --success-font-color: #0f5c2e;
+  --warning-font-color: #6a471b;
+  --danger-font-color: #7d201c;
+  --vaadin-user-color-0: var(--primary-20);
+  --vaadin-user-color-1: var(--secondary-30);
+  --vaadin-user-color-2: var(--info-20);
+  --vaadin-user-color-3: var(--warning-30);
+  --vaadin-user-color-4: var(--secondary-40);
+  --vaadin-user-color-5: var(--tertiary-30);
+  --vaadin-user-color-6: var(--danger-30);
+  --lumo-required-field-indicator: "\002a";
+}
+
+body {
+  background-color: var(--neutral-10);
+}

@@ -1,0 +1,5 @@
+:root {
+  --shadow-small: 0 2px 6px 0 #33374205, 0 1px 3px 0 #3337420f;
+  --shadow-default: 0 4px 12px 0 #33374205, 0 4px 8px 0 #3337420a, 0 2px 4px 0 #3337420a;
+  --shadow-large: 0 8px 24px 0 #33374214, 0 8px 16px 0 #33374214, 0 4px 8px 0 #3337420a, 0 2px 4px 0 #3337420a;
+}
