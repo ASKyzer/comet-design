@@ -11,6 +11,7 @@ import "./comet/demo-comet-default-button";
 import "./comet/demo-features-banner";
 import "./comet/demo-feedback-message";
 import "./comet/demo-icon";
+import "./comet/demo-loading-spinner";
 import "./comet/demo-small-card";
 import "./comet/demo-toggle";
 import "./demo-home";
@@ -41,6 +42,7 @@ export class DemoMain extends LitElement {
         { path: "/features-banner", component: "demo-features-banner" },
         { path: "/feedback-message", component: "demo-feedback-message" },
         { path: "/icon", component: "demo-icon" },
+        { path: "/loading-spinner", component: "demo-loading-spinner" },
         { path: "/small-card", component: "demo-small-card" },
         { path: "/toggle", component: "demo-toggle" },
       ] as Route[]);
@@ -70,6 +72,9 @@ export class DemoMain extends LitElement {
             ><a href="/feedback-message">Feedback Message</a></vaadin-tab
           >
           <vaadin-tab><a href="/icon">Icon</a></vaadin-tab>
+          <vaadin-tab
+            ><a href="/loading-spinner">Loading Spinner</a></vaadin-tab
+          >
           <vaadin-tab><a href="/small-card">Small Card</a></vaadin-tab>
           <vaadin-tab><a href="/toggle">Toggle</a></vaadin-tab>
         </vaadin-tabs>
