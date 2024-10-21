@@ -1,8 +1,15 @@
 import { Route, Router } from "@vaadin/router";
 import { css, html, LitElement, PropertyValues } from "lit";
 import { customElement } from "lit/decorators.js";
-import "./comet/demo-first";
+import "./comet/demo-accordion";
+import "./comet/demo-card";
+import "./comet/demo-comet-button";
+import "./comet/demo-comet-default-button";
+import "./comet/demo-icon";
+import "./comet/demo-small-card";
+import "./comet/demo-toggle";
 import "./demo-home";
+import "./vaadin/demo-button";
 
 @customElement("demo-main")
 export class DemoMain extends LitElement {
@@ -15,7 +22,17 @@ export class DemoMain extends LitElement {
           path: "/",
           component: "demo-home",
         },
-        { path: "/first", component: "demo-first" },
+        { path: "/accordion", component: "demo-accordion" },
+        { path: "/button", component: "demo-button" },
+        { path: "/card", component: "demo-card" },
+        { path: "/comet-button", component: "demo-comet-button" },
+        {
+          path: "/comet-default-button",
+          component: "demo-comet-default-button",
+        },
+        { path: "/icon", component: "demo-icon" },
+        { path: "/small-card", component: "demo-small-card" },
+        { path: "/toggle", component: "demo-toggle" },
       ] as Route[]);
     }
   }
@@ -24,7 +41,18 @@ export class DemoMain extends LitElement {
     return html`<div class="container">
         <vaadin-tabs>
           <vaadin-tab><a href="/">Home</a></vaadin-tab>
-          <vaadin-tab><a href="/first">First</a></vaadin-tab>
+          <vaadin-tab><a href="/accordion">Accordion</a></vaadin-tab>
+          <vaadin-tab><a href="/button">Button</a></vaadin-tab>
+          <vaadin-tab><a href="/card">Card</a></vaadin-tab>
+          <vaadin-tab><a href="/comet-button">Comet Button</a></vaadin-tab>
+          <vaadin-tab
+            ><a href="/comet-default-button"
+              >Comet Default Button</a
+            ></vaadin-tab
+          >
+          <vaadin-tab><a href="/icon">Icon</a></vaadin-tab>
+          <vaadin-tab><a href="/small-card">Small Card</a></vaadin-tab>
+          <vaadin-tab><a href="/toggle">Toggle</a></vaadin-tab>
         </vaadin-tabs>
       </div>
       <main id="outlet"></main>`;
