@@ -1,6 +1,6 @@
 import { html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-import "../../components/first/comet-first";
+import "../../components/accordion/comet-accordion";
 
 @customElement("demo-first")
 export class DemoFirst extends LitElement {
