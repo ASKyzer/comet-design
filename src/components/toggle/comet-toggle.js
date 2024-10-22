@@ -350,9 +350,3 @@ Polymer({
     this._template.setAttribute("strip-whitespace", "");
   },
 });
-
-declare global {
-  interface HTMLElementTagNameMap {
-    "comet-toggle": CometToggle;
-  }
-}

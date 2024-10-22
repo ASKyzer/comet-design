@@ -6,7 +6,7 @@ import { CardButtonConfig } from "../../components/card/comet-card";
 import "../../components/icon/comet-icon";
 
 @customElement("demo-card")
-export class BasicElement extends LitElement {
+export class DemoCard extends LitElement {
   public userName: string = "severus.snape";
   @state() buttonConfig: CardButtonConfig = null;
 
