@@ -1,18 +1,21 @@
+import fs from "fs";
 import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
     target: "esnext",
+    lib: {
+      entry: resolve(__dirname, "src/index.ts"),
+      name: "Comet",
+      fileName: "comet",
+    },
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, "comet.js"),
-        nested: resolve(__dirname, "./src/comet.css"),
-      },
+      external: /^lit/,
       output: {
-        entryFileNames: `comet.js`,
-        chunkFileNames: `[name].js`,
-        assetFileNames: `assets/[name].[ext]`,
+        globals: {
+          lit: "lit",
+        },
       },
     },
   },
