@@ -47,11 +47,19 @@ export class CometIcon extends LitElement {
   @property({ type: String })
   src = "";
 
+  @state()
+  private iconsLoaded = false;
+
   async connectedCallback() {
     super.connectedCallback();
-    this.iconsMap = await getIconsMap();
-    this.requestUpdate();
+    await this.loadIcons();
     this._updateSrc();
+  }
+
+  async loadIcons() {
+    this.iconsMap = await getIconsMap();
+    this.iconsLoaded = true;
+    this.requestUpdate();
   }
 
   private _updateSrc() {
@@ -97,6 +105,10 @@ export class CometIcon extends LitElement {
   }
 
   render() {
+    if (!this.iconsLoaded) {
+      return html`<div>${this.name}</div>`;
+    }
+
     if (this.type === "url" && this.src) {
       return html`
         <img
