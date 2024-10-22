@@ -1,4 +1,5 @@
 import { Route, Router } from "@vaadin/router";
+import "@vaadin/tabs";
 import { css, html, LitElement, PropertyValues } from "lit";
 import { customElement } from "lit/decorators.js";
 import "./comet/demo-accordion";
@@ -8,10 +9,14 @@ import "./comet/demo-card";
 import "./comet/demo-color-picker";
 import "./comet/demo-comet-button";
 import "./comet/demo-comet-default-button";
+import "./comet/demo-comet-multi-select";
+import "./comet/demo-comet-select";
 import "./comet/demo-features-banner";
 import "./comet/demo-feedback-message";
 import "./comet/demo-icon";
 import "./comet/demo-loading-spinner";
+import "./comet/demo-options";
+import "./comet/demo-options-categorized";
 import "./comet/demo-small-card";
 import "./comet/demo-toggle";
 import "./demo-home";
@@ -39,10 +44,14 @@ export class DemoMain extends LitElement {
           path: "/comet-default-button",
           component: "demo-comet-default-button",
         },
+        { path: "/comet-multi-select", component: "demo-comet-multi-select" },
+        { path: "/comet-select", component: "demo-comet-select" },
         { path: "/features-banner", component: "demo-features-banner" },
         { path: "/feedback-message", component: "demo-feedback-message" },
         { path: "/icon", component: "demo-icon" },
         { path: "/loading-spinner", component: "demo-loading-spinner" },
+        { path: "/options", component: "demo-options" },
+        { path: "/options-categorized", component: "demo-options-categorized" },
         { path: "/small-card", component: "demo-small-card" },
         { path: "/toggle", component: "demo-toggle" },
       ] as Route[]);
@@ -65,6 +74,10 @@ export class DemoMain extends LitElement {
               >Comet Default Button</a
             ></vaadin-tab
           >
+          <vaadin-tab><a href="/comet-select">Comet Select</a></vaadin-tab>
+          <vaadin-tab
+            ><a href="/comet-multi-select">Comet Multi Select</a></vaadin-tab
+          >
           <vaadin-tab
             ><a href="/features-banner">Features Banner</a></vaadin-tab
           >
@@ -74,6 +87,10 @@ export class DemoMain extends LitElement {
           <vaadin-tab><a href="/icon">Icon</a></vaadin-tab>
           <vaadin-tab
             ><a href="/loading-spinner">Loading Spinner</a></vaadin-tab
+          >
+          <vaadin-tab><a href="/options">Options</a></vaadin-tab>
+          <vaadin-tab
+            ><a href="/options-categorized">Options Categorized</a></vaadin-tab
           >
           <vaadin-tab><a href="/small-card">Small Card</a></vaadin-tab>
           <vaadin-tab><a href="/toggle">Toggle</a></vaadin-tab>
@@ -101,10 +118,8 @@ export class DemoMain extends LitElement {
       padding: 32px;
     }
 
-    vaadin-tabs {
-      display: flex;
-      justify-content: flex-start;
-      gap: 16px;
+    vaadin-tab {
+      white-space: nowrap;
     }
   `;
 }
