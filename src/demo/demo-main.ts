@@ -38,6 +38,7 @@ import "./demo-home";
 import "./vaadin/demo-avatar";
 import "./vaadin/demo-button";
 import "./vaadin/demo-checkbox";
+import "./vaadin/demo-combo-box";
 
 @customElement("demo-main")
 export class DemoMain extends LitElement {
@@ -53,6 +54,7 @@ export class DemoMain extends LitElement {
     { path: "/card", component: "demo-card" },
     { path: "/checkbox", component: "demo-checkbox" },
     { path: "/color-picker", component: "demo-color-picker" },
+    { path: "/combo-box", component: "demo-combo-box" },
     { path: "/comet-button", component: "demo-comet-button" },
     { path: "/comet-date-picker", component: "demo-comet-date-picker" },
     {
@@ -105,6 +107,7 @@ export class DemoMain extends LitElement {
           <vaadin-tab><a href="/card">Card</a></vaadin-tab>
           <vaadin-tab><a href="/checkbox">Checkbox</a></vaadin-tab>
           <vaadin-tab><a href="/color-picker">Color Picker</a></vaadin-tab>
+          <vaadin-tab><a href="/combo-box">Combo Box</a></vaadin-tab>
           <vaadin-tab><a href="/comet-button">Comet Button</a></vaadin-tab>
           <vaadin-tab
             ><a href="/comet-date-picker">Comet Date Picker</a></vaadin-tab

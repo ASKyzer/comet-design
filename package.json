@@ -24,6 +24,7 @@
     "@vaadin/checkbox": "^24.5.0",
     "@vaadin/checkbox-group": "^24.5.0",
     "@vaadin/combo-box": "^24.5.0",
+    "@vaadin/form-layout": "^24.5.0",
     "@vaadin/grid": "^24.5.0",
     "@vaadin/horizontal-layout": "^24.5.0",
     "@vaadin/menu-bar": "^24.5.0",
