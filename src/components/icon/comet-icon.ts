@@ -106,7 +106,7 @@ export class CometIcon extends LitElement {
 
   render() {
     if (!this.iconsLoaded) {
-      return html`<div>${this.name}</div>`;
+      return;
     }
 
     if (this.type === "url" && this.src) {
@@ -148,10 +148,6 @@ export class CometIcon extends LitElement {
   }
 
   renderDefs() {
-    if (!this.iconsMap) {
-      return "";
-    }
-
     return html`<defs>
       ${svg`${(<any>this.iconsMap)[this.getSvgSymbolId()]?.cloneNode(true)}`}
     </defs>`;
