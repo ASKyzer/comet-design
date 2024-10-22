@@ -39,6 +39,8 @@ import "./vaadin/demo-avatar";
 import "./vaadin/demo-button";
 import "./vaadin/demo-checkbox";
 import "./vaadin/demo-combo-box";
+import "./vaadin/demo-confirm-dialog";
+import "./vaadin/demo-context-menu";
 
 @customElement("demo-main")
 export class DemoMain extends LitElement {
@@ -63,6 +65,8 @@ export class DemoMain extends LitElement {
     },
     { path: "/comet-multi-select", component: "demo-comet-multi-select" },
     { path: "/comet-select", component: "demo-comet-select" },
+    { path: "/confirm-dialog", component: "demo-confirm-dialog" },
+    { path: "/context-menu", component: "demo-context-menu" },
     { path: "/details-card", component: "demo-details-card" },
     { path: "/features-banner", component: "demo-features-banner" },
     { path: "/feedback-message", component: "demo-feedback-message" },
@@ -121,6 +125,8 @@ export class DemoMain extends LitElement {
           <vaadin-tab
             ><a href="/comet-multi-select">Comet Multi Select</a></vaadin-tab
           >
+          <vaadin-tab><a href="/confirm-dialog">Confirm Dialog</a></vaadin-tab>
+          <vaadin-tab><a href="/context-menu">Context Menu</a></vaadin-tab>
           <vaadin-tab><a href="/details-card">Details Card</a></vaadin-tab>
           <vaadin-tab
             ><a href="/features-banner">Features Banner</a></vaadin-tab
