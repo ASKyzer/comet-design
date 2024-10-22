@@ -19,6 +19,7 @@
     "@vaadin/checkbox-group": "^24.5.0",
     "@vaadin/combo-box": "^24.5.0",
     "@vaadin/horizontal-layout": "^24.5.0",
+    "@vaadin/multi-select-combo-box": "^24.5.0",
     "@vaadin/notification": "^24.5.0",
     "@vaadin/number-field": "^24.5.0",
     "@vaadin/radio-group": "^24.5.0",
