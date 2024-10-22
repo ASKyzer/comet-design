@@ -24,6 +24,7 @@ import "./comet/demo-pill";
 import "./comet/demo-result";
 import "./comet/demo-searchbar";
 import "./comet/demo-selection-card";
+import "./comet/demo-sidebar";
 import "./comet/demo-small-card";
 import "./comet/demo-summary";
 import "./comet/demo-timeline";
@@ -61,6 +62,7 @@ export class DemoMain extends LitElement {
     { path: "/pill", component: "demo-comet-pill" },
     { path: "/result", component: "demo-result" },
     { path: "/selection-card", component: "demo-selection-card" },
+    { path: "/sidebar", component: "demo-sidebar" },
     { path: "/small-card", component: "demo-small-card" },
     { path: "/summary", component: "demo-summary" },
     { path: "/searchbar", component: "demo-searchbar" },
@@ -119,6 +121,7 @@ export class DemoMain extends LitElement {
           <vaadin-tab><a href="/result">Result</a></vaadin-tab>
           <vaadin-tab><a href="/searchbar">Searchbar</a></vaadin-tab>
           <vaadin-tab><a href="/selection-card">Selection Card</a></vaadin-tab>
+          <vaadin-tab><a href="/sidebar">Sidebar</a></vaadin-tab>
           <vaadin-tab><a href="/small-card">Small Card</a></vaadin-tab>
           <vaadin-tab><a href="/summary">Summary</a></vaadin-tab>
           <vaadin-tab><a href="/timeline">Timeline</a></vaadin-tab>
