@@ -20,6 +20,7 @@ import "./comet/demo-loading-spinner";
 import "./comet/demo-options";
 import "./comet/demo-options-categorized";
 import "./comet/demo-small-card";
+import "./comet/demo-timeline";
 import "./comet/demo-toggle";
 import "./demo-home";
 import "./vaadin/demo-button";
@@ -57,6 +58,7 @@ export class DemoMain extends LitElement {
         { path: "/options", component: "demo-options" },
         { path: "/options-categorized", component: "demo-options-categorized" },
         { path: "/small-card", component: "demo-small-card" },
+        { path: "/timeline", component: "demo-timeline" },
         { path: "/toggle", component: "demo-toggle" },
       ] as Route[]);
     }
@@ -101,6 +103,7 @@ export class DemoMain extends LitElement {
             ><a href="/options-categorized">Options Categorized</a></vaadin-tab
           >
           <vaadin-tab><a href="/small-card">Small Card</a></vaadin-tab>
+          <vaadin-tab><a href="/timeline">Timeline</a></vaadin-tab>
           <vaadin-tab><a href="/toggle">Toggle</a></vaadin-tab>
         </vaadin-tabs>
       </div>
