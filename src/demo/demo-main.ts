@@ -161,7 +161,11 @@ export class DemoMain extends LitElement {
           <vaadin-tab
             ><a href="/comet-date-picker">Comet Date Picker</a></vaadin-tab
           >
-
+          <vaadin-tab
+            ><a href="/comet-default-button"
+              >Comet Default Button</a
+            ></vaadin-tab
+          >
           <vaadin-tab><a href="/comet-select">Comet Select</a></vaadin-tab>
           <vaadin-tab
             ><a href="/comet-multi-select">Comet Multi Select</a></vaadin-tab
