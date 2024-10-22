@@ -138,6 +138,7 @@ export class DemoMain extends LitElement {
   protected firstUpdated(_changedProperties: PropertyValues) {
     const outlet = this.shadowRoot?.querySelector("#outlet") as HTMLElement;
     if (outlet && !this.router) {
+      // @ts-ignore
       this.router = new Router(outlet);
       this.router.setRoutes(this.routes);
     }
