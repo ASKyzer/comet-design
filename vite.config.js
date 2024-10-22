@@ -19,12 +19,12 @@ export default defineConfig({
           lit: "lit",
         },
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === "style.css") return "comet.css";
+          if (assetInfo.name === "comet.css") return "assets/comet.css";
           return assetInfo.name;
         },
       },
     },
-    cssCodeSplit: false,
+    cssCodeSplit: true,
   },
   optimizeDeps: {
     exclude: ["js-big-decimal"],
