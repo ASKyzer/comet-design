@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="fr" source-language="en" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="s0f2ba0bb72e9e976">
+  <source>Search by</source>
+  <target>Rechercher par</target>
+</trans-unit>
+<trans-unit id="sf993bb199fefbe04">
+  <source>All</source>
+  <target>Tout</target>
+</trans-unit>
+<trans-unit id="se253299d8c90f409">
+  <source>Clear filters</source>
+  <target>Effacer les filtres</target>
+</trans-unit>
+<trans-unit id="sd5b6130b4937488c">
+  <source>Reload</source>
+  <target>Recharger</target>
+</trans-unit>
+<trans-unit id="s56360c5f24cfd4ff">
+  <source>Items per page</source>
+  <target>Éléments par page</target>
+</trans-unit>
+<trans-unit id="s40664bffa760c01c">
+  <source>Showing</source>
+  <target>Affichage</target>
+</trans-unit>
+<trans-unit id="s08b06007b5567108">
+  <source>of</source>
+  <target>de</target>
+</trans-unit>
+<trans-unit id="s3e7884bf4f412c6f">
+  <source>items</source>
+  <target>éléments</target>
+</trans-unit>
+<trans-unit id="sa54d049c2657830f">
+  <source>Previous 5 Pages</source>
+  <target>Pages précédentes 5</target>
+</trans-unit>
+<trans-unit id="s3653213cbfbb152f">
+  <source>Next 5 Pages</source>
+  <target>5 prochaines pages</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
