@@ -103,3 +103,9 @@ export class CometSidebarMenuOptions extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-sidebar-menu-options": CometSidebarMenuOptions;
+  }
+}

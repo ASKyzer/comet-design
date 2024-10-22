@@ -93,3 +93,9 @@ export class CometDefaultButton extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-default-button": CometDefaultButton;
+  }
+}

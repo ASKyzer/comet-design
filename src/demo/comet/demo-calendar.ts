@@ -397,3 +397,9 @@ export class DemoCalendar extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-calendar": DemoCalendar;
+  }
+}

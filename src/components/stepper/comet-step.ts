@@ -272,3 +272,9 @@ export class CometStep extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-step": CometStep;
+  }
+}

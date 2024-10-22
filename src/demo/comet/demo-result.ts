@@ -93,3 +93,9 @@ export class DemoResultElement extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-result": DemoResultElement;
+  }
+}

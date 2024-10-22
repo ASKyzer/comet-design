@@ -196,3 +196,9 @@ export class CometSideBar extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-sidebar": CometSideBar;
+  }
+}

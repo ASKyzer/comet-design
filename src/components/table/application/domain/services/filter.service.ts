@@ -176,3 +176,9 @@ export class FilterService {
     return this.ALL_WORD;
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "filter-service": FilterService;
+  }
+}

@@ -214,3 +214,9 @@ export class DemoSearchbar extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-searchbar": DemoSearchbar;
+  }
+}

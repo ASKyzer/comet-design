@@ -71,3 +71,9 @@ export class DemoSummary extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-summary": DemoSummary;
+  }
+}

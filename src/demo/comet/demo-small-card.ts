@@ -164,3 +164,9 @@ export class DemoSmallCard extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-small-card": DemoSmallCard;
+  }
+}

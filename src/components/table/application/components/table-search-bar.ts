@@ -126,3 +126,9 @@ export class TableSearchBar extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "table-search-bar": TableSearchBar;
+  }
+}

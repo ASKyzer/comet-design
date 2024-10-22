@@ -227,3 +227,9 @@ export class CometStages extends LitElement {
     `,
   ];
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-stages": CometStages;
+  }
+}

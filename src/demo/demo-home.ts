@@ -131,3 +131,9 @@ export class DemoHome extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-home": DemoHome;
+  }
+}

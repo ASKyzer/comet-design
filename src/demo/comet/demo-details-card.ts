@@ -101,3 +101,9 @@ export class DemoDetailsCard extends LitElement {
 
   static styles = css``;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-details-card": DemoDetailsCard;
+  }
+}

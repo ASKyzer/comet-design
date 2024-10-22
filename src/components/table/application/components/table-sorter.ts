@@ -88,3 +88,9 @@ export class TableSorter extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "table-sorter": TableSorter;
+  }
+}

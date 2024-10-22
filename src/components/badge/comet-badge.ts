@@ -191,3 +191,8 @@ export class CometBadge extends LitElement {
     }
   `;
 }
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-badge": CometBadge;
+  }
+}

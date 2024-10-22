@@ -169,3 +169,9 @@ export class CustomPill extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-pill": CustomPill;
+  }
+}

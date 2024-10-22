@@ -537,3 +537,9 @@ export class CometSelect extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-select": CometSelect;
+  }
+}

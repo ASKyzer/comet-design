@@ -140,3 +140,9 @@ export class DemoSelectionCard extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-selection-card": DemoSelectionCard;
+  }
+}

@@ -96,3 +96,9 @@ export class DemoStepperElement extends LitElement {
 
   static styles = css``;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-stepper": DemoStepperElement;
+  }
+}

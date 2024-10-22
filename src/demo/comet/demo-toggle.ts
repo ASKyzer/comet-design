@@ -47,3 +47,9 @@ export class DemoToggle extends LitElement {
 
   static styles = css``;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-toggle": DemoToggle;
+  }
+}

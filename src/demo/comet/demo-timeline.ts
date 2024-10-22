@@ -103,3 +103,9 @@ export class DemoCometTimeline extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-timeline": DemoCometTimeline;
+  }
+}

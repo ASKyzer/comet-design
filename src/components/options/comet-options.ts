@@ -1052,3 +1052,9 @@ export class CometOptions extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-options": CometOptions;
+  }
+}

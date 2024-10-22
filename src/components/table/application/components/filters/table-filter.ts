@@ -198,3 +198,9 @@ export class TableFilter extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "table-filter": TableFilter;
+  }
+}

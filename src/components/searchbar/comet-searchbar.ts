@@ -314,3 +314,9 @@ export class CometSearchBar extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-searchbar": CometSearchBar;
+  }
+}

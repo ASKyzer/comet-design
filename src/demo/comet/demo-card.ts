@@ -220,3 +220,9 @@ export class BasicElement extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-card": DemoCard;
+  }
+}

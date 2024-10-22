@@ -41,3 +41,9 @@ export class DemoLoadingSpinner extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-loading-spinner": DemoLoadingSpinner;
+  }
+}

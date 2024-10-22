@@ -220,3 +220,9 @@ export class CometSidebarMenu extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-sidebar-menu": CometSidebarMenu;
+  }
+}

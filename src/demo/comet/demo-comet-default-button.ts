@@ -168,3 +168,9 @@ export class DemoCometDefaultButton extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-comet-default-button": DemoCometDefaultButton;
+  }
+}

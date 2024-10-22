@@ -294,3 +294,9 @@ export class CometColorPicker extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-color-picker": CometColorPicker;
+  }
+}

@@ -122,3 +122,9 @@ export class DemoFeaturesBanner extends LitElement {
 
   static styles = css``;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-features-banner": DemoFeaturesBanner;
+  }
+}

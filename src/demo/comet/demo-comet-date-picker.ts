@@ -282,3 +282,9 @@ export class DemoCometDatePicker extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-comet-date-picker": DemoCometDatePicker;
+  }
+}

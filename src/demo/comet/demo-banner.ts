@@ -145,3 +145,9 @@ export class DemoBanner extends LitElement {
     // }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-banner": DemoBanner;
+  }
+}

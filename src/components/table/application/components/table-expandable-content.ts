@@ -99,3 +99,9 @@ export class TableExpandableContent extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "table-expandable-content": TableExpandableContent;
+  }
+}

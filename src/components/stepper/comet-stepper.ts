@@ -43,3 +43,9 @@ export class CometStepper extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-stepper": CometStepper;
+  }
+}

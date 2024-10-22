@@ -165,3 +165,9 @@ export class CustomDetailsCard extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-details-card": CustomDetailsCard;
+  }
+}

@@ -252,3 +252,9 @@ export class DemoMain extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-main": DemoMain;
+  }
+}

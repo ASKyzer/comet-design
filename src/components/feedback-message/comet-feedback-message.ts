@@ -179,3 +179,9 @@ export class CometFeedbackMessage extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-feedback-message": CometFeedbackMessage;
+  }
+}
