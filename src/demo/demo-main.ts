@@ -13,13 +13,16 @@ import "./comet/demo-comet-date-picker";
 import "./comet/demo-comet-default-button";
 import "./comet/demo-comet-multi-select";
 import "./comet/demo-comet-select";
+import "./comet/demo-details-card";
 import "./comet/demo-features-banner";
 import "./comet/demo-feedback-message";
 import "./comet/demo-icon";
 import "./comet/demo-loading-spinner";
 import "./comet/demo-options";
 import "./comet/demo-options-categorized";
+import "./comet/demo-pill";
 import "./comet/demo-small-card";
+import "./comet/demo-summary";
 import "./comet/demo-timeline";
 import "./comet/demo-toggle";
 import "./demo-home";
@@ -28,39 +31,42 @@ import "./vaadin/demo-button";
 @customElement("demo-main")
 export class DemoMain extends LitElement {
   router: Router | null = null;
+  private routes: Route[] = [
+    { path: "/", component: "demo-home" },
+    { path: "/accordion", component: "demo-accordion" },
+    { path: "/badge", component: "demo-badge" },
+    { path: "/banner", component: "demo-banner" },
+    { path: "/button", component: "demo-button" },
+    { path: "/calendar", component: "demo-calendar" },
+    { path: "/card", component: "demo-card" },
+    { path: "/color-picker", component: "demo-color-picker" },
+    { path: "/comet-button", component: "demo-comet-button" },
+    { path: "/comet-date-picker", component: "demo-comet-date-picker" },
+    {
+      path: "/comet-default-button",
+      component: "demo-comet-default-button",
+    },
+    { path: "/comet-multi-select", component: "demo-comet-multi-select" },
+    { path: "/comet-select", component: "demo-comet-select" },
+    { path: "/details-card", component: "demo-details-card" },
+    { path: "/features-banner", component: "demo-features-banner" },
+    { path: "/feedback-message", component: "demo-feedback-message" },
+    { path: "/icon", component: "demo-icon" },
+    { path: "/loading-spinner", component: "demo-loading-spinner" },
+    { path: "/options", component: "demo-options" },
+    { path: "/options-categorized", component: "demo-options-categorized" },
+    { path: "/pill", component: "demo-comet-pill" },
+    { path: "/small-card", component: "demo-small-card" },
+    { path: "/summary", component: "demo-summary" },
+    { path: "/timeline", component: "demo-timeline" },
+    { path: "/toggle", component: "demo-toggle" },
+  ];
+
   protected firstUpdated(_changedProperties: PropertyValues) {
-    if (!this.router) {
-      this.router = new Router(this.shadowRoot?.querySelector("#outlet"));
-      this.router.setRoutes([
-        {
-          path: "/",
-          component: "demo-home",
-        },
-        { path: "/accordion", component: "demo-accordion" },
-        { path: "/badge", component: "demo-badge" },
-        { path: "/banner", component: "demo-banner" },
-        { path: "/button", component: "demo-button" },
-        { path: "/calendar", component: "demo-calendar" },
-        { path: "/card", component: "demo-card" },
-        { path: "/color-picker", component: "demo-color-picker" },
-        { path: "/comet-button", component: "demo-comet-button" },
-        { path: "/comet-date-picker", component: "demo-comet-date-picker" },
-        {
-          path: "/comet-default-button",
-          component: "demo-comet-default-button",
-        },
-        { path: "/comet-multi-select", component: "demo-comet-multi-select" },
-        { path: "/comet-select", component: "demo-comet-select" },
-        { path: "/features-banner", component: "demo-features-banner" },
-        { path: "/feedback-message", component: "demo-feedback-message" },
-        { path: "/icon", component: "demo-icon" },
-        { path: "/loading-spinner", component: "demo-loading-spinner" },
-        { path: "/options", component: "demo-options" },
-        { path: "/options-categorized", component: "demo-options-categorized" },
-        { path: "/small-card", component: "demo-small-card" },
-        { path: "/timeline", component: "demo-timeline" },
-        { path: "/toggle", component: "demo-toggle" },
-      ] as Route[]);
+    const outlet = this.shadowRoot?.querySelector("#outlet") as HTMLElement;
+    if (outlet && !this.router) {
+      this.router = new Router(outlet);
+      this.router.setRoutes(this.routes);
     }
   }
 
@@ -88,6 +94,7 @@ export class DemoMain extends LitElement {
           <vaadin-tab
             ><a href="/comet-multi-select">Comet Multi Select</a></vaadin-tab
           >
+          <vaadin-tab><a href="/details-card">Details Card</a></vaadin-tab>
           <vaadin-tab
             ><a href="/features-banner">Features Banner</a></vaadin-tab
           >
@@ -102,7 +109,9 @@ export class DemoMain extends LitElement {
           <vaadin-tab
             ><a href="/options-categorized">Options Categorized</a></vaadin-tab
           >
+          <vaadin-tab><a href="/pill">Pill</a></vaadin-tab>
           <vaadin-tab><a href="/small-card">Small Card</a></vaadin-tab>
+          <vaadin-tab><a href="/summary">Summary</a></vaadin-tab>
           <vaadin-tab><a href="/timeline">Timeline</a></vaadin-tab>
           <vaadin-tab><a href="/toggle">Toggle</a></vaadin-tab>
         </vaadin-tabs>
