@@ -18,6 +18,7 @@ import "./src/components/icon/comet-icon.ts";
 import "./src/components/loading-spinner/comet-loading-spinner.ts";
 import "./src/components/options/comet-options.ts";
 import "./src/components/small-card/comet-small-card.ts";
+import "./src/components/timeline/comet-timeline.ts";
 import "./src/components/toggle/comet-toggle.ts";
 
 // Vaadin components
