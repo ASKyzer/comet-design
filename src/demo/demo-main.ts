@@ -35,6 +35,7 @@ import "./comet/demo-table";
 import "./comet/demo-timeline";
 import "./comet/demo-toggle";
 import "./demo-home";
+import "./vaadin/demo-avatar";
 import "./vaadin/demo-button";
 
 @customElement("demo-main")
@@ -43,6 +44,7 @@ export class DemoMain extends LitElement {
   private routes: Route[] = [
     { path: "/", component: "demo-home" },
     { path: "/accordion", component: "demo-accordion" },
+    { path: "/avatar", component: "demo-avatar" },
     { path: "/badge", component: "demo-badge" },
     { path: "/banner", component: "demo-banner" },
     { path: "/button", component: "demo-button" },
@@ -93,6 +95,7 @@ export class DemoMain extends LitElement {
         <vaadin-tabs>
           <vaadin-tab><a href="/">Home</a></vaadin-tab>
           <vaadin-tab><a href="/accordion">Accordion</a></vaadin-tab>
+          <vaadin-tab><a href="/avatar">Avatar</a></vaadin-tab>
           <vaadin-tab><a href="/badge">Badge</a></vaadin-tab>
           <vaadin-tab><a href="/banner">Banner</a></vaadin-tab>
           <vaadin-tab><a href="/button">Button</a></vaadin-tab>
