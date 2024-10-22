@@ -25,6 +25,7 @@
     "@vaadin/radio-group": "^24.5.0",
     "@vaadin/router": "^2.0.0",
     "@vaadin/tabs": "^24.5.0",
+    "@vaadin/text-field": "^24.5.0",
     "@vaadin/vaadin-themable-mixin": "^24.5.0",
     "@vaadin/vertical-layout": "^24.5.0",
     "lit": "^3.2.1",

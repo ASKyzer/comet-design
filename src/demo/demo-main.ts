@@ -5,9 +5,11 @@ import { customElement } from "lit/decorators.js";
 import "./comet/demo-accordion";
 import "./comet/demo-badge";
 import "./comet/demo-banner";
+import "./comet/demo-calendar";
 import "./comet/demo-card";
 import "./comet/demo-color-picker";
 import "./comet/demo-comet-button";
+import "./comet/demo-comet-date-picker";
 import "./comet/demo-comet-default-button";
 import "./comet/demo-comet-multi-select";
 import "./comet/demo-comet-select";
@@ -37,9 +39,11 @@ export class DemoMain extends LitElement {
         { path: "/badge", component: "demo-badge" },
         { path: "/banner", component: "demo-banner" },
         { path: "/button", component: "demo-button" },
+        { path: "/calendar", component: "demo-calendar" },
         { path: "/card", component: "demo-card" },
         { path: "/color-picker", component: "demo-color-picker" },
         { path: "/comet-button", component: "demo-comet-button" },
+        { path: "/comet-date-picker", component: "demo-comet-date-picker" },
         {
           path: "/comet-default-button",
           component: "demo-comet-default-button",
@@ -66,9 +70,13 @@ export class DemoMain extends LitElement {
           <vaadin-tab><a href="/badge">Badge</a></vaadin-tab>
           <vaadin-tab><a href="/banner">Banner</a></vaadin-tab>
           <vaadin-tab><a href="/button">Button</a></vaadin-tab>
+          <vaadin-tab><a href="/calendar">Calendar</a></vaadin-tab>
           <vaadin-tab><a href="/card">Card</a></vaadin-tab>
           <vaadin-tab><a href="/color-picker">Color Picker</a></vaadin-tab>
           <vaadin-tab><a href="/comet-button">Comet Button</a></vaadin-tab>
+          <vaadin-tab
+            ><a href="/comet-date-picker">Comet Date Picker</a></vaadin-tab
+          >
           <vaadin-tab
             ><a href="/comet-default-button"
               >Comet Default Button</a

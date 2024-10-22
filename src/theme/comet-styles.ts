@@ -6,3 +6,4 @@ import "./vaadin/multi-select-combo-box";
 import "./vaadin/notification";
 import "./vaadin/radio-button";
 import "./vaadin/tabs";
+import "./vaadin/text-field";
