@@ -1,10 +1,29 @@
+// Vaadin styles
+import "./vaadin/avatar";
 import "./vaadin/button";
 import "./vaadin/checkbox";
 import "./vaadin/checkbox-group";
 import "./vaadin/combo-box";
+import "./vaadin/confirm-dialog";
+import "./vaadin/context-menu";
+import "./vaadin/custom-field";
+import "./vaadin/date-picker";
+import "./vaadin/date-time-picker";
+import "./vaadin/dialog";
+import "./vaadin/email-field";
 import "./vaadin/grid";
 import "./vaadin/multi-select-combo-box";
 import "./vaadin/notification";
+import "./vaadin/number-field";
+import "./vaadin/password-field";
+import "./vaadin/progress-bar";
 import "./vaadin/radio-button";
+import "./vaadin/select";
 import "./vaadin/tabs";
 import "./vaadin/text-field";
+import "./vaadin/textarea";
+import "./vaadin/time-picker";
+import "./vaadin/tooltip";
+import "./vaadin/upload";
+
+import "./vaadin/upload";
