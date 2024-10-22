@@ -3,10 +3,6 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    lib: {
-      entry: resolve(__dirname, "comet.js"),
-      formats: ["es"],
-    },
     target: "esnext",
     rollupOptions: {
       input: {
