@@ -1,7 +1,6 @@
-import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import fs from "fs";
-import { terser } from "rollup-plugin-terser";
+import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -18,20 +17,17 @@ export default defineConfig({
         assetFileNames: `assets/[name].[ext]`,
         dir: "dist",
         format: "esm",
-        preserveModules: true,
         preserveEntrySignatures: "strict",
-        sourcemap: true, // Generates source maps for debugging
       },
     },
+    sourcemap: true, // Generates source maps for debugging
   },
   optimizeDeps: {
     exclude: ["js-big-decimal"],
   },
   assetsInclude: ["**/*.svg"],
   plugins: [
-    resolve(),
     typescript(),
-    terser(),
     {
       name: "vite-plugin-raw-svg",
       transform(code, id) {

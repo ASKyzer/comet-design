@@ -1,129 +1,102 @@
 # Comet Design System
 
-Comet Design System is a comprehensive UI framework that provides a consistent and efficient way to build web applications. It combines the power of Vaadin components with custom-built elements to create a cohesive and visually appealing user interface.
+Comet Design System is a UI framework that provides consistent components for building web applications. It extends Vaadin components and includes custom-built elements.
 
-## Table of Contents
-
-1. [Features](#features)
-2. [Getting Started](#getting-started)
-3. [Usage](#usage)
-4. [Components](#components)
-5. [Customization](#customization)
-6. [Development](#development)
-7. [Testing](#testing)
-8. [Building for Production](#building-for-production)
-9. [Contributing](#contributing)
-10. [Versioning](#versioning)
-11. [License](#license)
-12. [Acknowledgments](#acknowledgments)
-
-## Features
-
-- Extension of Vaadin components
-- Custom-built components
-- Consistent styling across all elements
-- Part of a global design system UI
-- Easy integration with Lit-based projects
-- TypeScript support
-
-## Getting Started
+## Quick Start
 
 ### Prerequisites
 
 - Node.js (v14 or later)
 - npm (v6 or later)
 
-### Installation
+### Setup
 
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/comet-design-system.git
+   git clone https://github.com/ASKyzer/comet-design.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd comet-design-system
+   cd comet-design
    ```
 
 3. Install dependencies:
+
    ```
    npm install
    ```
 
+### Building the Library
+
+To build the library:
+
+```
+npm run build
+```
+
+### Testing Locally in Other Projects
+
+To test the library locally in React, Angular, or other frameworks:
+
+1. After building, create a tarball:
+
+   ```
+   npm pack --pack-destination ~
+   ```
+
+   This will produce a file named `frigi-comet-[version].tgz`. This version number will be the same as the one in the `package.json` file.
+
+2. In your destination project's `package.json`, add the following dependency:
+
+   ```json
+   {
+     "dependencies": {
+       "@frigi/comet": "file:~/frigi-comet-[version].tgz"
+     }
+   }
+   ```
+
+   Replace `[version]` with the actual version number (e.g., 0.9.0).
+
+3. Run `npm install` in your destination project to install the local package.
+
+4. Follow the instructions in the destination project on how to use the components. In an Angular project for example, you can use the components by adding in main.ts:
+
+   ```typescript
+   import "@frigi/comet/dist/comet.js";
+   ```
+
+   and in the or `angular.json` file, add the following:
+
+   ```json
+   "projects": {
+    "project-name": {
+      "architect": {
+        "build": {
+          "options": {
+            "styles": ["node_modules/@frigi/comet/dist assets/nest.css"]
+          }
+        }
+      }
+    }
+   }
+   ```
+
+5. Other frameworks will require different setup. Check the documentation of the framework you are using.
+
 ## Usage
 
-To use Comet Design System in your project, import the components you need:
+Import and use Comet components in your project:
+
+For Angular for example: add a schema: [CUSTOM_ELEMENTS_SCHEMA] in the module.
 
 ```typescript
-import { CometButton, CometInput, CometCard } from "comet-design-system";
+<comet-component></comet-component>
 ```
-
-Then, you can use these components in your Lit-based application:
-
-```typescript
-import { LitElement, html } from "lit";
-import { customElement } from "lit/decorators.js";
-import { CometButton, CometInput, CometCard } from "comet-design-system";
-
-@customElement("my-app")
-class MyApp extends LitElement {
-  render() {
-    return html`
-      <comet-card>
-        <h2>Welcome to Comet Design System</h2>
-        <comet-input label="Enter your name"></comet-input>
-        <comet-button>Submit</comet-button>
-      </comet-card>
-    `;
-  }
-}
-```
-
-For more detailed usage instructions and examples, please refer to our [documentation](https://docs.comet-design-system.com).
-
-## Components
-
-Comet Design System includes a wide range of components, including but not limited to:
-
-- Buttons
-- Inputs
-- Cards
-- Modals
-- Navigation elements
-- Data visualization components
-
-For a complete list of components and their usage, please check our [component library](https://components.comet-design-system.com).
-
-## Customization
-
-Comet Design System allows for customization of its components and styling to fit your project's needs.
-
-## Development
-
-Comet Design System is built using TypeScript and Lit.
-
-## Testing
-
-Comet Design System uses Jest for testing.
-
-## Building for Production
-
-Comet Design System uses Webpack for building.
-
-## Contributing
-
-Contributions to Comet Design System are welcome.
-
-## Versioning
-
-Comet Design System follows Semantic Versioning.
 
 ## License
 
 Comet Design System is licensed under the MIT License.
-
-## Acknowledgments
-
-Comet Design System acknowledges the contributions of its community.
