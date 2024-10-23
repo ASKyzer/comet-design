@@ -17,6 +17,8 @@ export default defineConfig({
         dir: "dist",
         format: "esm",
         preserveModules: true,
+        preserveEntrySignatures: "strict",
+        sourcemap: true, // Generates source maps for debugging
       },
     },
   },
@@ -25,6 +27,10 @@ export default defineConfig({
   },
   assetsInclude: ["**/*.svg"],
   plugins: [
+    resolve(),
+    commonjs(),
+    typescript(),
+    terser(),
     {
       name: "vite-plugin-raw-svg",
       transform(code, id) {
@@ -35,4 +41,7 @@ export default defineConfig({
       },
     },
   ],
+  treeshake: {
+    moduleSideEffects: false, // Ensure only used code is included, reducing the chance of conflicts
+  },
 });
