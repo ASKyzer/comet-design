@@ -1,4 +1,3 @@
-import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import fs from "fs";
@@ -31,7 +30,6 @@ export default defineConfig({
   assetsInclude: ["**/*.svg"],
   plugins: [
     resolve(),
-    commonjs(),
     typescript(),
     terser(),
     {
