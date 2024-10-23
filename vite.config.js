@@ -1,8 +1,8 @@
 import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import fs from "fs";
-import { resolve } from "path";
-import terser from "rollup-plugin-terser";
+import { terser } from "rollup-plugin-terser";
 import { defineConfig } from "vite";
 
 export default defineConfig({
