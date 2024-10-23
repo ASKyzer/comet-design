@@ -37,9 +37,3 @@ export const getIconsMap = (): Promise<Record<string, SVGElement>> => {
     }
   });
 };
-
-// Add this type declaration at the bottom of the file
-declare module "*.svg" {
-  const content: string;
-  export default content;
-}

@@ -84,3 +84,9 @@ export class LoadingSpinner extends LitElement {
 
 `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "loading-spinner": LoadingSpinner;
+  }
+}

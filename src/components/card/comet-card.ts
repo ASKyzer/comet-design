@@ -215,3 +215,9 @@ export class CometCard extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-card": CometCard;
+  }
+}

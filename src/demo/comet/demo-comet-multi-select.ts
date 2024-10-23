@@ -178,3 +178,9 @@ export class DemoCometMultiSelect extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-comet-multi-select": DemoCometMultiSelect;
+  }
+}

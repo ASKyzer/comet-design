@@ -219,3 +219,9 @@ export class TableDropDown extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "table-drop-down": TableDropDown;
+  }
+}

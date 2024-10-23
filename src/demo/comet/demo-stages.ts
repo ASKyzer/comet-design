@@ -95,3 +95,9 @@ export class DemoStages extends LitElement {
 
   static styles = css``;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-stages": DemoStages;
+  }
+}

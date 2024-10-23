@@ -67,3 +67,9 @@ export class CometSkeleton extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-skeleton": CometSkeleton;
+  }
+}

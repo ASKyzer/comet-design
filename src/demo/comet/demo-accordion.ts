@@ -386,3 +386,9 @@ export class DemoAccordion extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-accordion": DemoAccordion;
+  }
+}

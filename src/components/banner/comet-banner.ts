@@ -220,3 +220,8 @@ export class CometBanner extends LitElement {
     }
   `;
 }
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-banner": CometBanner;
+  }
+}

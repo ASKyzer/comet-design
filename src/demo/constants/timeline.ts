@@ -1,4 +1,4 @@
-import { TimelineItem } from "./comet-timeline";
+import { TimelineItem } from "../../components/timeline/comet-timeline";
 
 export const HISTORY_TIMELINE: TimelineItem[] = [
   {

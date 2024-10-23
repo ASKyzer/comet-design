@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-import "../../components/loading-spinner/loading-spinner";
+import "../../components/loading-spinner/comet-loading-spinner";
 
 @customElement("demo-loading-spinner")
 export class DemoLoadingSpinner extends LitElement {
@@ -40,4 +40,10 @@ export class DemoLoadingSpinner extends LitElement {
       gap: 48px;
     }
   `;
+}
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-loading-spinner": DemoLoadingSpinner;
+  }
 }

@@ -159,3 +159,9 @@ export class CometIcon extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-icon": CometIcon;
+  }
+}

@@ -163,3 +163,9 @@ export class DemoSidebar extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-sidebar": DemoSidebar;
+  }
+}

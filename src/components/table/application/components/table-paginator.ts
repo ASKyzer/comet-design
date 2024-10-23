@@ -355,3 +355,9 @@ export class TablePaginator extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "table-paginator": TablePaginator;
+  }
+}

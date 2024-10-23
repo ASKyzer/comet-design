@@ -276,3 +276,9 @@ export class DemoSkeleton extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-skeleton": DemoSkeleton;
+  }
+}

@@ -108,3 +108,9 @@ export class CometResult extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-result": CometResult;
+  }
+}

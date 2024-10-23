@@ -321,3 +321,9 @@ export class DemoOptions extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-options": DemoOptions;
+  }
+}

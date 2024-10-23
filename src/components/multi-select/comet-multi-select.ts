@@ -688,3 +688,9 @@ export class CometMultiSelect extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-multi-select": CometMultiSelect;
+  }
+}

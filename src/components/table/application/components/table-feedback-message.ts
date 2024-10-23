@@ -60,3 +60,9 @@ export class TableFeedbackMessage extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "table-feedback-message": TableFeedbackMessage;
+  }
+}

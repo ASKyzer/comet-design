@@ -1374,3 +1374,9 @@ export class CometCalendar extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-calendar": CometCalendar;
+  }
+}

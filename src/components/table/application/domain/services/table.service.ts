@@ -15,3 +15,9 @@ export class TableService {
     return this.upstream.asObservable();
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "table-service": TableService;
+  }
+}

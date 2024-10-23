@@ -25,5 +25,3 @@ import "./vaadin/textarea";
 import "./vaadin/time-picker";
 import "./vaadin/tooltip";
 import "./vaadin/upload";
-
-import "./vaadin/upload";

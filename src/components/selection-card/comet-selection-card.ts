@@ -87,3 +87,9 @@ export class CustomSelectionCard extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-selection-card": CustomSelectionCard;
+  }
+}

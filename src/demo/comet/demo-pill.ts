@@ -108,3 +108,9 @@ export class DemoCometPill extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-comet-pill": DemoCometPill;
+  }
+}

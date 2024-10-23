@@ -466,3 +466,9 @@ export class DemoBadge extends LitElement {
 
   static styles = css``;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-badge": DemoBadge;
+  }
+}

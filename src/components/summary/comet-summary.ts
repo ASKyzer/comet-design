@@ -167,3 +167,9 @@ export class CometSummary extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-summary": CometSummary;
+  }
+}

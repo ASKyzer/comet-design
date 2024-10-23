@@ -236,3 +236,9 @@ export class CometButton extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-button": CometButton;
+  }
+}

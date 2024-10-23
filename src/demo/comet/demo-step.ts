@@ -211,3 +211,9 @@ export class DemoCometStep extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-step": DemoCometStep;
+  }
+}

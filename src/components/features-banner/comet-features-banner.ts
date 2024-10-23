@@ -268,3 +268,9 @@ export class CometFeaturesBanner extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "comet-features-banner": CometFeaturesBanner;
+  }
+}

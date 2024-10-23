@@ -222,3 +222,9 @@ export class FilterTags extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "filter-tags": FilterTags;
+  }
+}

@@ -354,3 +354,9 @@ export class DemoOptionsCategorized extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-options-categorized": DemoOptionsCategorized;
+  }
+}

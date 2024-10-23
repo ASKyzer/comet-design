@@ -230,3 +230,9 @@ export class DemoFeedbackMessage extends LitElement {
     }
   `;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "demo-feedback-message": DemoFeedbackMessage;
+  }
+}
