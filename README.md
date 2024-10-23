@@ -29,6 +29,22 @@ Comet Design System is a UI framework that provides consistent components for bu
    npm install
    ```
 
+### Running the Project Locally
+
+To run the project locally after installing the dependencies:
+
+```
+npm run dev
+```
+
+after running the project, you can access the components at:
+
+```
+http://localhost:5173/
+```
+
+of course, the port can be different depending on how many other projects are running on your machine. There, you can see all the components in action.
+
 ### Building the Library
 
 To build the library:
@@ -77,7 +93,7 @@ To test the library locally in React, Angular, or other frameworks:
       "architect": {
         "build": {
           "options": {
-            "styles": ["node_modules/@frigi/comet/dist assets/nest.css"]
+            "styles": ["node_modules/@frigi/comet/dist/assets/comet.css"]
           }
         }
       }
