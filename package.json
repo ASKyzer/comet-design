@@ -1,6 +1,6 @@
 {
   "name": "@frigi/comet",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "main": "comet.js",
   "files": [
     "dist",

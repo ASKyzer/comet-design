@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "comet.js"),
-        nest: resolve(__dirname, "./src/comet.css"),
+        comet: resolve(__dirname, "./src/comet.css"),
       },
       output: {
         entryFileNames: `comet.js`,
