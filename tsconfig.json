@@ -6,6 +6,8 @@
     "module": "ESNext",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
+    "importHelpers": true,
+
     /* Bundler mode */
     "moduleResolution": "node",
     // "allowImportingTsExtensions": true,
@@ -24,5 +26,6 @@
       }
     ]
   },
+  "exclude": ["node_modules"],
   "include": ["src"]
 }
