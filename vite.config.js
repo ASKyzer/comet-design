@@ -1,5 +1,6 @@
 import typescript from "@rollup/plugin-typescript";
 import fs from "fs";
+import { glob } from "glob";
 import { resolve } from "path";
 import { defineConfig } from "vite";
 
@@ -10,17 +11,30 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "comet.js"),
         comet: resolve(__dirname, "./src/comet.css"),
+        ...Object.fromEntries(
+          glob
+            .sync("src/**/*.svg")
+            .map((file) => [
+              file.slice(4).replace(/\.[^/.]+$/, ""),
+              resolve(__dirname, file),
+            ])
+        ),
       },
       output: {
         entryFileNames: `comet.js`,
         chunkFileNames: `[name].js`,
-        assetFileNames: `assets/[name].[ext]`,
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name.endsWith(".svg")) {
+            return "assets/[name][extname]";
+          }
+          return "assets/[name][extname]";
+        },
         dir: "dist",
         format: "esm",
         preserveEntrySignatures: "strict",
       },
     },
-    sourcemap: true, // Generates source maps for debugging
+    sourcemap: false,
   },
   optimizeDeps: {
     exclude: ["js-big-decimal"],
