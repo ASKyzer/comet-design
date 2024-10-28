@@ -113,6 +113,8 @@ For Angular for example: add a schema: [CUSTOM_ELEMENTS_SCHEMA] in the module.
 <comet-component></comet-component>
 ```
 
+Additionally, to use the icons and fonts, you need to import the icons in your project. This can be done by going to @frigi/comet/dist/assets folder in the node_modules folder and copying the icons and fonts folders to your project's src/assets folder.
+
 ## License
 
 Comet Design System is licensed under the MIT License.

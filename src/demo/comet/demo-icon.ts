@@ -178,15 +178,15 @@ export class DemoIcon extends LitElement {
             @color-change="${this.handleCardBackgroundColorChange}"
           ></comet-color-picker>
         </div>
+      </div>
 
-        <div style="width: 500px; margin-left: 2rem;">
-          <comet-multi-select
-            style="width: 100%"
-            @select-change="${this.handleFilterChange}"
-            .items="${ICON_TYPES_FILTER_ITEMS}"
-            label="Select Icons to display"
-          ></comet-multi-select>
-        </div>
+      <div style="width: 626px; margin-bottom: 48px;">
+        <comet-multi-select
+          style="width: 100%"
+          @select-change="${this.handleFilterChange}"
+          .items="${ICON_TYPES_FILTER_ITEMS}"
+          label="Select Icons to display"
+        ></comet-multi-select>
       </div>
 
       ${Object.entries(ICON_MAPPING).map(([key, { title, icons, type }]) =>
@@ -242,9 +242,9 @@ export class DemoIcon extends LitElement {
   static styles = css`
     .icons-container {
       display: flex;
-      padding: var(--spacing-jumbo);
       gap: 12px;
       flex-wrap: wrap;
+      margin-bottom: 24px;
     }
   `;
 }
