@@ -1,6 +1,5 @@
-import { css, html, LitElement, svg } from "lit";
+import { css, html, LitElement } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
-import { getIconsMap } from "./icon-sets";
 
 @customElement("comet-icon")
 export class CometIcon extends LitElement {
@@ -47,19 +46,8 @@ export class CometIcon extends LitElement {
   @property({ type: String })
   src = "";
 
-  @state()
-  private iconsLoaded = false;
-
-  async connectedCallback() {
-    super.connectedCallback();
-    await this.loadIcons();
+  firstUpdated() {
     this._updateSrc();
-  }
-
-  async loadIcons() {
-    this.iconsMap = await getIconsMap();
-    this.iconsLoaded = true;
-    this.requestUpdate();
   }
 
   private _updateSrc() {
@@ -105,10 +93,6 @@ export class CometIcon extends LitElement {
   }
 
   render() {
-    if (!this.iconsLoaded) {
-      return;
-    }
-
     if (this.type === "url" && this.src) {
       return html`
         <img
@@ -138,19 +122,14 @@ export class CometIcon extends LitElement {
               viewBox="0 0 ${this.size} ${this.size}"
               style="${this.getStyles()}"
             >
-              ${this.renderDefs()}
-              <use href="#${this.getSvgSymbolId()}"></use>
+              <use
+                href="${`src/assets/${this.type}.svg#${this.getSvgSymbolId()}`}"
+              ></use>
             </svg>`}
       `;
     } else {
       return "";
     }
-  }
-
-  renderDefs() {
-    return html`<defs>
-      ${svg`${(<any>this.iconsMap)[this.getSvgSymbolId()]?.cloneNode(true)}`}
-    </defs>`;
   }
 
   static styles = css`
